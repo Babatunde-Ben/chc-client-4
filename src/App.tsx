@@ -13,33 +13,11 @@ function App() {
   return (
     <AnimatePresence>
       <Navbar />
-      <main className="bg-[#f3f7f7] px-5 pt-16 pb-10 sm:px-10 md:px-16 lg:px-40">
-        {/* <section className="h-[calc(100vh-100px)] w-full relative">
-        <img
-          src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-17355559/original/9b28aa75-2404-4e76-bd24-f6d80486d03a.jpeg"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute bg-black/30 top-0 left-0 z-1 w-full h-full flex flex-col justify-center items-center p-5">
-          <h1 className="font-extrabold text-white text-2xl text-center mb-5 capitalize md:w-1/2">
-            Entire townhouse in Tampa, Florida, United States
-          </h1>
-          <motion.button
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{ delay: 1.2, duration: 0.4 }}
-            className="bg-primary-500 px-10 py-3 rounded-md text-white font-semibold transition duration-150 hover:bg-primary-600"
-          >
-            Book Now{" "}
-          </motion.button>
-        </div>
-      </section> */}
-
+      <main className="bg-[#f3f7f7] px-5 pt-14 pb-10 sm:px-10 md:px-16 lg:px-40">
         <section>
+          <h1 className="text-primary-500 text-2xl text-center font-bold mb-5 md:text-3xl md:mb-8">
+            King Bed - Stylish, Bright & Cozy
+          </h1>
           <motion.div
             initial={{
               opacity: 0,
@@ -77,9 +55,6 @@ function App() {
               }}
               transition={{ delay: 1, duration: 0.4 }}
             >
-              <h1 className="text-primary-500 text-lg font-semibold mb-3">
-                King Bed - Stylish, Bright & Cozy
-              </h1>
               <div className="text-secondary-900 flex gap-2 items-start">
                 <Location className="w-5 h-5" />{" "}
                 <div className="font-medium text-sm md:text-base">
@@ -163,6 +138,85 @@ function App() {
         >
           Book Now{" "}
         </motion.button>
+
+        <section className="my-10 lg:py-12">
+          <motion.p
+            initial={{
+              opacity: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+            }}
+            transition={{ delay: 0.2, duration: 0.4 }}
+            className="text-2xl font-bold text-center text-primary-500 mb-3 md:text-3xl md:mb-5 "
+          >
+            About
+          </motion.p>
+          <motion.p
+            initial={{
+              opacity: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+            }}
+            transition={{ delay: 0.3, duration: 0.4 }}
+            className="text-center md:w-2/3 md:mx-auto text-secondary-900"
+          >
+            Discover the perfect blend of style, comfort, and convenience at our
+            3BR 3Bath Tampa Heights Oasis, a gem nestled in the city's heart,
+            just minutes from Downtown Tampa. This vibrant neighborhood boasts
+            excellent restaurants, shops, attractions, and landmarks, making it
+            an ideal base for your Tampa getaway.
+          </motion.p>
+        </section>
+        <section className="my-10 ">
+          <motion.p
+            initial={{
+              opacity: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+            }}
+            transition={{ delay: 0.2, duration: 0.4 }}
+            className="text-2xl font-bold text-center text-primary-500 mb-10 md:text-3xl "
+          >
+            Amenities
+          </motion.p>
+
+          <div className="flex flex-wrap gap-5 sm:justify-center md:gap-4 lg:px-14">
+            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
+              <City />
+              <span>City skyline view</span>
+            </div>
+            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
+              <Kitchen />
+              <span>Kitchen</span>
+            </div>
+            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
+              <Wifi />
+              <span>Fast wifi – 634 Mbps</span>
+            </div>
+            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
+              <Workspace />
+              <span>Dedicated workspace</span>
+            </div>
+            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
+              <CarPark />
+              <span>Free parking on premises</span>
+            </div>
+          </div>
+          <button
+            onClick={() =>
+              window.open(
+                "https://www.airbnb.com/rooms/17355559?source_impression_id=p3_1706610286_V5a72yW7w2BSAwHQ",
+                "_blank"
+              )
+            }
+            className="text-secondary-900 outline-none font-semibold text-center mt-10 border border-secondary-900 rounded-lg px-8 py-3 transition duration-150 block mx-auto hover:bg-[#edf3f3]"
+          >
+            See all amenities
+          </button>
+        </section>
         <section className="my-16">
           <div className="grid grid-flow-row-dense  justify-center items-center gap-5 px-10 sm:grid-cols-2 md:px-20 ">
             <motion.div
@@ -246,84 +300,6 @@ function App() {
               />
             </motion.div>
           </div>
-        </section>
-        <section className="my-10 lg:py-12">
-          <motion.p
-            initial={{
-              opacity: 0,
-            }}
-            whileInView={{
-              opacity: 1,
-            }}
-            transition={{ delay: 0.2, duration: 0.4 }}
-            className="text-2xl font-bold text-center text-primary-500 mb-3 md:text-3xl md:mb-5 "
-          >
-            About
-          </motion.p>
-          <motion.p
-            initial={{
-              opacity: 0,
-            }}
-            whileInView={{
-              opacity: 1,
-            }}
-            transition={{ delay: 0.3, duration: 0.4 }}
-            className="text-center md:w-2/3 md:mx-auto text-secondary-900"
-          >
-            Discover the perfect blend of style, comfort, and convenience at our
-            3BR 3Bath Tampa Heights Oasis, a gem nestled in the city's heart,
-            just minutes from Downtown Tampa. This vibrant neighborhood boasts
-            excellent restaurants, shops, attractions, and landmarks, making it
-            an ideal base for your Tampa getaway.
-          </motion.p>
-        </section>
-        <section className="my-10 ">
-          <motion.p
-            initial={{
-              opacity: 0,
-            }}
-            whileInView={{
-              opacity: 1,
-            }}
-            transition={{ delay: 0.2, duration: 0.4 }}
-            className="text-2xl font-bold text-center text-primary-500 mb-10 md:text-3xl "
-          >
-            Amenities
-          </motion.p>
-
-          <div className="flex flex-wrap gap-5 sm:justify-center md:gap-4 lg:px-14">
-            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
-              <City />
-              <span>City skyline view</span>
-            </div>
-            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
-              <Kitchen />
-              <span>Kitchen</span>
-            </div>
-            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
-              <Wifi />
-              <span>Fast wifi – 634 Mbps</span>
-            </div>
-            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
-              <Workspace />
-              <span>Dedicated workspace</span>
-            </div>
-            <div className="bg-[#e4ecec] rounded-full px-7 py-3 w-full inline-flex justify-center gap-3 items-center text-secondary-900 sm:w-fit">
-              <CarPark />
-              <span>Free parking on premises</span>
-            </div>
-          </div>
-          <button
-            onClick={() =>
-              window.open(
-                "https://www.airbnb.com/rooms/17355559?source_impression_id=p3_1706610286_V5a72yW7w2BSAwHQ",
-                "_blank"
-              )
-            }
-            className="text-secondary-900 outline-none font-semibold text-center mt-10 border border-secondary-900 rounded-lg px-8 py-3 transition duration-150 block mx-auto hover:bg-[#edf3f3]"
-          >
-            See all amenities
-          </button>
         </section>
       </main>
       <Footer />

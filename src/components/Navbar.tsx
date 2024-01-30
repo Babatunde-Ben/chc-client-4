@@ -36,7 +36,7 @@ const Navbar = () => {
             "_blank"
           )
         }
-        className="bg-primary-500 px-5 py-2 rounded-md text-white font-semibold transition duration-150 text-sm hover:bg-primary-600"
+        className="bg-primary-500 px-5  rounded-md text-white font-semibold transition duration-150 text-sm hover:bg-primary-600 md:px-6 py-3"
       >
         Book Now{" "}
       </motion.button>
