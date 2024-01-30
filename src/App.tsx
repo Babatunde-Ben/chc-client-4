@@ -60,7 +60,7 @@ function App() {
               />
             </motion.div>
           </motion.div>
-          <div className="flex flex-col gap-5 sm:flex-row justify-between ">
+          <div className="flex flex-col gap-8 sm:gap-5 sm:flex-row justify-between ">
             <motion.div
               initial={{
                 opacity: 0,
@@ -112,7 +112,7 @@ function App() {
           whileInView={{
             opacity: 1,
           }}
-          transition={{ delay: 0.4, duration: 0.4 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
           className="flex justify-center items-center flex-wrap gap-3 my-10 sm:gap-5"
         >
           <div className="p-3 border border-secondary-900 rounded-lg flex flex-col gap-1  items-center w-[90px]">
@@ -139,7 +139,7 @@ function App() {
           whileInView={{
             opacity: 1,
           }}
-          transition={{ delay: 0.4, duration: 0.4 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
           onClick={() =>
             window.open(
               "https://www.airbnb.com/rooms/17355559?source_impression_id=p3_1706610286_V5a72yW7w2BSAwHQ",
@@ -183,7 +183,7 @@ function App() {
               whileHover={{
                 scale: 1.05,
               }}
-              transition={{ delay: 0.7, duration: 0.4 }}
+              transition={{ delay: 0.4, duration: 0.4 }}
               className="rounded-xl overflow-hidden"
             >
               <img
@@ -203,7 +203,7 @@ function App() {
               whileHover={{
                 scale: 1.05,
               }}
-              transition={{ delay: 1, duration: 0.4 }}
+              transition={{ delay: 0.4, duration: 0.4 }}
               className="rounded-xl overflow-hidden"
             >
               <img
@@ -223,7 +223,7 @@ function App() {
               whileHover={{
                 scale: 1.05,
               }}
-              transition={{ delay: 1.3, duration: 0.4 }}
+              transition={{ delay: 0.4, duration: 0.4 }}
               className="rounded-xl overflow-hidden"
             >
               <img
@@ -243,7 +243,7 @@ function App() {
               whileInView={{
                 opacity: 1,
               }}
-              transition={{ delay: 0.4, duration: 0.4 }}
+              transition={{ delay: 0.2, duration: 0.4 }}
               className="text-xl font-bold text-center text-primary-500 mb-2 md:text-2xl md:mb-5 lg:text-3xl"
             >
               About
@@ -255,7 +255,7 @@ function App() {
               whileInView={{
                 opacity: 1,
               }}
-              transition={{ delay: 0.7, duration: 0.4 }}
+              transition={{ delay: 0.3, duration: 0.4 }}
               className="text-center md:w-2/3 md:mx-auto"
             >
               Discover the perfect blend of style, comfort, and convenience at
