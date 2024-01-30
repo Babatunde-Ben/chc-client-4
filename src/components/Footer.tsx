@@ -2,7 +2,7 @@ import { ReactComponent as FacebookIcon } from "../assets/svgs/facebook.svg";
 import { ReactComponent as TwitterIcon } from "../assets/svgs/twitter.svg";
 import { ReactComponent as InstagramIcon } from "../assets/svgs/instagram.svg";
 import { ReactComponent as MessageIcon } from "../assets/svgs/envelope.svg";
-// import { ReactComponent as Logo } from "../assets/svgs/CHC-logo-full.svg";
+import { ReactComponent as Logo } from "../assets/svgs/CHC-logo-full.svg";
 
 const Footer = () => {
   const copyrightYear = new Date().getFullYear();
@@ -27,7 +27,10 @@ const Footer = () => {
   return (
     <footer className="px-5 py-20 bg-secondary-100 sm:px-10 md:px-16 lg:px-40 ">
       <div className=" flex flex-col gap-12 items-center mb-20 md:flex-row md:justify-between  lg:max-w-[1500px] lg:mx-auto">
-        {/* <Logo className="w-40 h-20" /> */}
+        <Logo
+          className="w-40 h-20"
+          onClick={() => (window.location.href = "#")}
+        />
 
         <div className="flex gap-2 items-center text-secondary-900">
           <MessageIcon />
