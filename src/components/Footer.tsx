@@ -2,7 +2,7 @@ import { ReactComponent as FacebookIcon } from "../assets/svgs/facebook.svg";
 import { ReactComponent as TwitterIcon } from "../assets/svgs/twitter.svg";
 import { ReactComponent as InstagramIcon } from "../assets/svgs/instagram.svg";
 import { ReactComponent as MessageIcon } from "../assets/svgs/envelope.svg";
-import { ReactComponent as Logo } from "../assets/svgs/CHC-logo-full.svg";
+// import { ReactComponent as Logo } from "../assets/svgs/CHC-logo-full.svg";
 
 const Footer = () => {
   const copyrightYear = new Date().getFullYear();
