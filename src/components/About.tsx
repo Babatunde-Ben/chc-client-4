@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { data } from "../lib/data";
 
 const About = () => {
   return (
@@ -25,11 +26,7 @@ const About = () => {
         transition={{ delay: 0.3, duration: 0.3 }}
         className="text-center md:w-2/3 md:mx-auto text-secondary-900"
       >
-        Discover the perfect blend of style, comfort, and convenience at our 3BR
-        3Bath Tampa Heights Oasis, a gem nestled in the city's heart, just
-        minutes from Downtown Tampa. This vibrant neighborhood boasts excellent
-        restaurants, shops, attractions, and landmarks, making it an ideal base
-        for your Tampa getaway.
+        {data.about}
       </motion.p>
     </section>
   );

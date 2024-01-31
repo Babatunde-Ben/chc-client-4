@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ReactComponent as Logo } from "../assets/svgs/CHC-logo.svg";
+import { data } from "../lib/data";
 
 const Navbar = () => {
   const navBarVariants = {
@@ -30,12 +31,7 @@ const Navbar = () => {
           opacity: 1,
         }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        onClick={() =>
-          window.open(
-            "https://www.airbnb.com/rooms/17355559?source_impression_id=p3_1706610286_V5a72yW7w2BSAwHQ",
-            "_blank"
-          )
-        }
+        onClick={() => window.open(data.airbnb_link, "_blank")}
         className="bg-primary-500 px-5  rounded-md text-white font-semibold transition duration-150 text-sm hover:bg-primary-600 md:px-6 py-3"
       >
         Book Now{" "}
